@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="logo">Brand Name</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </main>
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0];
+        const navLinks = document.getElementsByClassName('navbar-links')[0];
+
+        toggleButton.addEventListener('click', function () {
+            navLinks.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
